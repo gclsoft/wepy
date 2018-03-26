@@ -14,6 +14,13 @@
     <!-- favicon.ico in the root directory -->
     <link rel="stylesheet" href="./css/main.css">
     <meta property="og:title" content="WePy 小程序组件化开发框架">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-0243484158988577",
+              enable_page_level_ads: true
+         });
+    </script>
 </head>
 <body class="shown">
 <div class="container-wrap" id="app">
@@ -213,9 +220,9 @@
                             ...
                         </p>
                         <div class="examples__pr">
-                            <a class="button button--pr" href="https://github.com/Tencent/wepy/tree/master/docs/data" target="_blank"> 
+                            <a class="button button--pr" href="https://github.com/Tencent/wepy/tree/master/docs/data" target="_blank">
                                 <strong style="font-size: 20px;">+</strong> 案例</a>
-                        </div> 
+                        </div>
                     </div>
 
                     <!-- 应用案例 -->
@@ -232,11 +239,11 @@
             </div>
         </div>
     </div>
-    <div class="modal-container" :class="isQrShow ? 'active' : ''" @click="modalClick"> 
+    <div class="modal-container" :class="isQrShow ? 'active' : ''" @click="modalClick">
             <div class="qr-modal">
                 <div style="padding: 10px;">
                     我们是完全开源的，任何人都可以免费投稿。WePY 交流群已满500人，请加 gcaufy_helper 好友或者扫码加好友，验证回复 wepy 按照指引进群。
-                </div> 
+                </div>
                 <img style="width: 200px;" src="img/qrcode.png">
             </div>
     </div>
@@ -295,7 +302,7 @@
         style: '',
         code: `
 import wepy from 'wepy';
-        
+
 export default class Index extends wepy.page {
     getData() {
       return new Promise((resolve, reject) => {
@@ -304,7 +311,7 @@ export default class Index extends wepy.page {
         }, 3000);
       });
     };
-        
+
     async onLoad () {
       let data = await this.getData();
       console.log(data.data);
@@ -317,7 +324,7 @@ export default class Index extends wepy.page {
         style: '',
         code: `
 import wepy from 'wepy';
-        
+
 // 通过继承自wepy.page的类创建页面逻辑
 export default class Index extends wepy.page {
     //可用于页面模板绑定的数据
@@ -325,14 +332,14 @@ export default class Index extends wepy.page {
       motto: 'Hello World',
       userInfo: {}
     };
-     
+
     //事件处理函数(集中保存在methods对象中)
     methods = {
       bindViewTap () {
         console.log('button clicked');
       }
     };
-        
+
     //页面的生命周期函数
     onLoad () {
       console.log('onLoad');
@@ -345,7 +352,7 @@ export default class Index extends wepy.page {
         style: '',
         code: `
 import wepy from 'wepy';
-        
+
 export default class Index extends wepy.page {
     getData() {
       return new Promise((resolve, reject) => {
@@ -354,7 +361,7 @@ export default class Index extends wepy.page {
         }, 3000);
       });
     };
-        
+
     async onLoad () {
       let data = await this.getData();
       console.log(data.data);
@@ -419,7 +426,7 @@ var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?14c98a4c2ac48bfa7a4c6e9bf797d125";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
